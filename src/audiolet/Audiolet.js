@@ -6738,7 +6738,7 @@ sinks.wav.wavAudio = wavAudio;
 }(this.Sink));
  (function (sinks, fixChrome82795) {
 
-var AudioContext = typeof window === 'undefined' ? null : window.webkitAudioContext || window.AudioContext;
+var AudioContext = typeof window === 'undefined' ? null : window.AudioContext || window.webkitAudioContext;
 
 /**
  * A sink class for the Web Audio API
